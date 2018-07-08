@@ -77,7 +77,6 @@ def extractFunctionFromPatent(function_str):
             it = it.replace("\n", "")
         functions.append(it.strip())
 
-
     return functions
 
 
@@ -93,7 +92,6 @@ def extractMajorFunctionFromPatent(major_function_str):
 
     # Split major functions string by "、"
     items = major_function_str.split("、")
-    print("major item num: %d" % len(items))
 
     # process item strong
     for it in items:
